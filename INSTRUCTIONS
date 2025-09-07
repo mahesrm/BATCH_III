@@ -1,0 +1,19 @@
+Minimal Database Schema
+
+(Use this as a starting point — adapt fields as needed)
+
+tables
+
+users (id, name, email, phone, role)
+
+vehicles (id, reg_no, type, capacity, status)
+
+drivers (id, name, phone, license_no, assigned_vehicle_id)
+
+routes (id, origin, destination, route_no, estimated_time)
+
+schedules (id, route_id, vehicle_id, departure_time, arrival_time)
+
+bookings (id, user_id, route_id, schedule_id, seat_no, status, created_at)
+
+Add indexes on route_id, vehicle_id, user_id for performance.
