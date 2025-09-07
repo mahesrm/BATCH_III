@@ -1,0 +1,76 @@
+# Mini Project: Efficient Data Structures for Searching and Sorting
+
+## 📌 Project Overview
+The goal of this project is to **analyze and compare the efficiency of search algorithms** when implemented in different data structures such as:
+- **Binary Search Trees (BST)**
+- **AVL Trees**
+- **Hash Tables**
+
+You will implement these data structures, test their performance on different datasets, and compare results for search and insertion operations.
+
+---
+
+## 🎯 Objectives
+1. Implement **BST, AVL Tree, and Hash Table** in your chosen programming language (Java, Python, or C++).
+2. Insert a dataset (random numbers, sorted numbers, and duplicate values) into each data structure.
+3. Perform search operations (successful and unsuccessful searches).
+4. Measure and compare the **time complexity and performance** of search operations across the three data structures.
+5. Present results using tables/graphs.
+
+---
+
+## 🛠️ Tasks
+- [ ] Implement **Binary Search Tree (BST)** with insertion and search.
+- [ ] Implement **AVL Tree** with rotations, insertion, and search.
+- [ ] Implement **Hash Table** (with collision handling using chaining or open addressing).
+- [ ] Generate datasets of varying sizes (e.g., 100, 1000, 10,000 elements).
+- [ ] Measure time taken for:
+  - Insertion
+  - Searching (element present, element not present)
+- [ ] Record results in a **comparison table**.
+- [ ] Plot a **graph** showing performance differences.
+
+---
+
+## 📊 Expected Output
+- A comparison table (example):
+
+| Data Structure | Insert Time (1000 elements) | Search Time (Present) | Search Time (Absent) |
+|----------------|------------------------------|------------------------|-----------------------|
+| BST            | 12 ms                        | 2 ms                   | 3 ms                  |
+| AVL Tree       | 15 ms                        | 1 ms                   | 1 ms                  |
+| Hash Table     | 8 ms                         | 0.5 ms                 | 0.8 ms                |
+
+- Graphs showing how performance changes as dataset size increases.
+
+---
+
+## 📦 Deliverables
+1. Source code files (`.py`, `.java`, `.cpp`).
+2. Dataset used (if applicable).
+3. README with explanation and results.
+4. Comparison tables/graphs.
+
+---
+
+#Evaluation Criteria
+- Correctness of implementations.
+- Proper handling of edge cases.
+- Clarity of results (tables/graphs).
+- Code readability and documentation.
+- Analysis of which data structure is most efficient for searching and why.
+
+---
+
+#Hints
+- Use Python’s `time` module or Java’s `System.nanoTime()` for measuring execution time.
+- For Hash Tables, try experimenting with different load factors and collision handling strategies.
+- AVL Trees guarantee **balanced height**, so search is always `O(log n)`.
+- BST may degrade to **O(n)** if input is sorted.
+- Hash Tables give `O(1)` average search but depend on good hash functions.
+
+---
+
+#Suggested Tools
+- **Programming Language**: Python / Java / C++
+- **Graphing**: Matplotlib (Python), Excel, or Google Sheets
